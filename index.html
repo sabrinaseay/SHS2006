@@ -1,148 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotsylvania High School Class of 2006 Reunion</title>
+    <title>Spotsylvania High School Class of 2006 Reunion</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    header {
+        background: linear-gradient(135deg, #800000, #a52a2a);
+        color: white;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
 
-        header {
-            background: linear-gradient(135deg, #800000, #a52a2a);
-            color: white;
-            text-align: center;
-            padding: 3rem 1rem;
-        }
+    nav {
+        background: #222;
+        text-align: center;
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: 500;
+    }
 
-        nav {
-            background: #222;
-            text-align: center;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-        }
+    .container {
+        max-width: 900px;
+        margin: auto;
+    }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: 500;
-        }
+    section {
+        padding: 2rem;
+        background: white;
+        margin: 1.5rem 1rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    h2 {
+        color: #800000;
+    }
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-        }
+    img {
+        width: 100%;
+        border-radius: 12px;
+        margin-top: 15px;
+    }
 
-        section {
-            padding: 2rem;
-            background: white;
-            margin: 1.5rem 1rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-        }
+    .button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background: #800000;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+    }
 
-        h2 {
-            color: #800000;
-        }
+    /* BIG TICKET BANNER */
+    .ticket-banner {
+        background: navy;
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+        margin: 1.5rem;
+        border-radius: 12px;
+    }
 
-        img {
-            width: 100%;
-            border-radius: 12px;
-            margin-top: 15px;
-        }
+    .ticket-banner h2 {
+        color: white;
+        font-size: 2rem;
+    }
 
-        .button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background: #800000;
-            color: white;
-            border-radius: 8px;
-            text-decoration: none;
-        }
+    .ticket-button {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 15px 25px;
+        background: red;
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-        .button:hover {
-            background: #a52a2a;
-        }
+    /* COUNTDOWN */
+    .countdown {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #800000;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background: #800000;
+        color: white;
+        margin-top: 2rem;
+    }
+</style>
+
 </head>
-<body>
-
-<header>
+<body><header>
     <h1>Spotsylvania High School</h1>
     <h2>Class of 2006 Reunion 🎉</h2>
-</header>
-
-<nav>
+    <div class="countdown" id="countdown"></div>
+</header><nav>
     <a href="#event">Event Info</a>
-    <a href="#rsvp">RSVP</a>
+    <a href="#tickets">Tickets</a>
     <a href="#lodging">Lodging</a>
     <a href="#contact">Contact</a>
-</nav>
-
-<div class="container">
-
-<section id="event">
+</nav><!-- BIG TICKETS BANNER --><div id="tickets" class="ticket-banner">
+    <h2>🎟️ Get Your Tickets Now!</h2>
+    <p>$20 per person</p>
+    <a class="ticket-button" href="https://form.jotform.com/260828158721057" target="_blank">Buy Tickets</a>
+</div><div class="container"><section id="event">
     <h2>Event Details</h2>
     <p><strong>Date:</strong> Sunday, June 21, 2026</p>
-    <p><strong>Location:</strong> Wilderness Presidential Resort Clubhouse, 9220 Plank Road, Spotsylvania, VA</p>
+    <p><strong>Location:</strong> Wilderness Presidential Resort Clubhouse, Spotsylvania, VA</p>
     <p><strong>Time:</strong> 4:00 PM – 8:00 PM</p>
-    <p><strong>Tickets:</strong> $20 per person</p>
-    <p>Dinner, entertainment, and fun will be included. This is a BYOB event. Some drinks will be available for purchase. Must be 21+ to consume alcohol. Please drink responsibly!</p>
+    <p><strong>Tickets:</strong> $20 per person</p><img src="images/reunion.jpg" alt="Class Reunion">
 
-    <!-- Example Image -->
-    <img src="C:\Users\sseay\Downloads\images" alt="Spotsylvania High School">
-</section>
-
-<section id="lodging">
+</section><section id="lodging">
     <h2>Lodging</h2>
     <p>If you are coming from out of town, Wilderness Presidential Resort offers cabins.</p>
     <a class="button" href="https://wpresort.com" target="_blank">Visit Website</a>
-</section>
-
-<section id="rsvp">
-    <h2>RSVP</h2>
-    <p>Please let us know if you’re coming!</p>
-    <a class="button" href="mailto:spotsylvaniahigh2006@gmail.com">Email to RSVP</a>
-</section>
-
-<section id="contact">
-    <h2>Have any questions? Want to be a part of the Reunion Committee? Email us below!</h2>
+</section><section id="contact">
+    <h2>Reunion Committee</h2>
     <p>Email: spotsylvaniahigh2006@gmail.com</p>
-</section>
-
-</div>
-
-<footer>
+</section></div><footer>
     <p>© 2026 SHS Class of 2006</p>
-</footer>
+</footer><script>
+    const eventDate = new Date("June 21, 2026 16:00:00").getTime();
 
-</body>
+    const timer = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        document.getElementById("countdown").innerHTML =
+            days + " days " + hours + " hrs " + minutes + " min until reunion";
+
+        if (distance < 0) {
+            clearInterval(timer);
+            document.getElementById("countdown").innerHTML = "It's Reunion Time! 🎉";
+        }
+    }, 1000);
+</script></body>
 </html>
